@@ -222,6 +222,11 @@ public override bool Execute() {
       <VCRedistDir>$(VCInstallDir)\Redist\MSVC\$(VCToolsRedistVersion)\</VCRedistDir>
     </PropertyGroup>
 
+      <PropertyGroup>
+      <VCRedistDir>C:\devtools\vstudio\VC\Redist\MSVC\14.29.30133\</VCRedistDir>
+      <VCToolsRedistVersion>14.29.30133</VCToolsRedistVersion>
+    </PropertyGroup>
+
     <PropertyGroup>
       <VCRedistDir Condition="$(Platform) == 'Win32'">$(VCRedistDir)x86\</VCRedistDir>
       <VCRedistDir Condition="$(Platform) != 'Win32'">$(VCRedistDir)$(Platform)\</VCRedistDir>
